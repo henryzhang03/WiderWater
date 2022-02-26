@@ -1,12 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact</title>
+  <link rel="stylesheet" href="contactstyle.css" />
+  <script src="https://kit.fontawesome.com/d813fba8ad.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  
+  <!-- Login Form -->
+  <div id="loginForm" class="modal">
+    
+    <form class="modal-content animate" action="/action_page.php" method="post">
+
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('loginForm').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+  <!-- Navbar Section -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="index.html" id="navbar__logo"> <i class="fa-solid fa-hand-holding-droplet"></i> WiderWater</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span> <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="index.html" class="navbar__links" id="home-page">Home</a>
+        </li>
+        <li class="navbar__item">
+          <a href="MyWater.html" class="navbar__links" id="about-page">MyWater</a>
+        </li>
+        <li class="navbar__item">
+          <a href="contact.html" class="navbar__links" id="services-page">Contact</a>
+        </li>
+        <li class="navbar__login">
+          <button class = "navbar__btn" onclick="document.getElementById('loginForm').style.display='block'" >Login</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="wrapper">
+    <div class="inner">
+      <form action="">
+      <h3>Contact WiderWater</h3>
+      <label class="form-group">
+        <textarea name="" id="" class="form-control" required></textarea>
+        <span for="">Your Name</span>
+        <span class="border"></span>
+      </label>
+      <label class="form-group">
+        <textarea name="" id="" class="form-control" required></textarea>
+        <span for="">Your Mail</span>
+        <span class="border"></span>
+      </label>
+      <label class="form-group">
+        <textarea name="" id="" class="form-control" required></textarea>
+        <span for="">Your Message</span>
+        <span class="border"></span>
+      </label>
+      <button class = "contact-submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>About Us</h2>
+            <a href="/sign__up">How it Works</a> <a href="/">Terms of Service</a>
+          </div>
+
+        </div>
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Social Media</h2>
+            <a href="/">Instagram</a> <a href="/">Facebook</a>
+            <a href="/">Youtube</a> <a href="/">Twitter</a>
+          </div>
+        </div>
+      </div>
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo">WiderWater</a>
+          </div>
+          <p class="website__rights">© WiderWater 2022. All rights reserved</p>
+          <div class="social__icons">
+            <a href="/" class="social__icon--link" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+
 </body>
 </html>
