@@ -414,12 +414,6 @@ video {
   transform: scale(1.075);
   transition: 0.3s ease-in;
   cursor: pointer;
-  height: 64px;
-  font: normal normal 700 1em/4em Arial,sans-serif;
-  overflow: hidden;
-  width: 100%;
-  display: inline-block;
-  margin-bottom: 3em;
 }
 
 /*.slideout-anim-wrap {
