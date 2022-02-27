@@ -184,12 +184,12 @@ const ctxturbidity = document.getElementById('turbidityChart').getContext('2d');
         }
     }
 });
-const annotation1 = {
+const conductanceUpperBound = {
   type: 'line',
   scaleID: 'y',
   borderWidth: 3,
   borderColor: 'black',
-  value: 0.5,
+  value: 1000,
   label: {
     content: 'Line annotation at x=0.5',
     enabled: true
