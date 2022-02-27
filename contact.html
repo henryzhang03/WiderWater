@@ -25,14 +25,11 @@
         </div>
       </form>
     </div>
+
     <!-- Sign Up Form -->
     <div id="signUpForm" class="modal">
       <form class="modal-content" action="/action_page.php">
         <div class="login__container">
-          <h1>Sign Up</h1>
-          <div class = "hr__wrapper">
-            <hr>
-          </div>
           <label for="email"><b>Email</b></label>
           <input type="username" placeholder="Enter Email" name="email" required>
     
@@ -50,30 +47,26 @@
       </form>
     </div>
 
-  <!-- Navbar Section -->
-  <nav class="navbar">
-    <div class="navbar__container">
-      <a href="index.html" id="navbar__logo"> <i class="fa-solid fa-hand-holding-droplet"></i> WiderWater</a>
-      <div class="navbar__toggle" id="mobile-menu">
-        <span class="bar"></span> <span class="bar"></span>
-        <span class="bar"></span>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="index.html" id="navbar__logo"> <i class="fa-solid fa-hand-holding-droplet"></i> WiderWater</a>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="index.html" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="MyWater.html" class="navbar__links" id="about-page">MyWater</a>
+          </li>
+          <li class="navbar__item">
+            <a href="contact.html" class="navbar__links" id="services-page">Contact</a>
+          </li>
+          <li class="navbar__login">
+            <button class = "navbar__btn" onclick="document.getElementById('signUpForm').style.display='block'" >Sign Up</button>
+          </li>
+        </ul>
       </div>
-      <ul class="navbar__menu">
-        <li class="navbar__item">
-          <a href="index.html" class="navbar__links" id="home-page">Home</a>
-        </li>
-        <li class="navbar__item">
-          <a href="MyWater.html" class="navbar__links" id="about-page">MyWater</a>
-        </li>
-        <li class="navbar__item">
-          <a href="contact.html" class="navbar__links" id="services-page">Contact</a>
-        </li>
-        <li class="navbar__login">
-          <button class = "navbar__btn" onclick="document.getElementById('signUpForm').style.display='block'" >Sign Up</button>
-        </li>
-      </ul>
-    </div>
-  </nav>
+    </nav>
 
   <!-- Contact -->
   <div class="contact__wrapper">
@@ -125,8 +118,6 @@
         </div>
       </section>
     </div>
-
     <script src="app.js"></script>
-
 </body>
 </html>

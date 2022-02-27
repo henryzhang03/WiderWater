@@ -69,7 +69,7 @@ options: {
   plugins: {
     title: {
       display: true,
-      text: 'pH',
+      text: 'pH Level',
       font: {
         size: 30,
         family: 'raleway',
@@ -214,7 +214,7 @@ const turbidityUpperBound = {
   scaleID: 'y',
   borderWidth: 1,
   borderColor: 'black',
-  value: 0.2,
+  value: 0.3,
   label: {
     position: 'start',
     content: 'Recommended Upper Bound',
@@ -289,7 +289,7 @@ const ctxturbidity = document.getElementById('turbidityChart').getContext('2d');
       scales: {
             y: {
                 beginAtZero: true,
-                suggestedMax: 0.3
+                suggestedMax: 1
             }
         }
     }
@@ -300,7 +300,7 @@ const conductanceUpperBound = {
   scaleID: 'y',
   borderWidth: 1,
   borderColor:  'black',
-  value: 1000,
+  value: 2500,
   label: {
     position: 'start',
     content: 'Recommended Upper Bound',
@@ -313,23 +313,6 @@ const conductanceUpperBound = {
   },
 };
 
-const conductanceLowerBound = {
-  type: 'line',
-  scaleID: 'y',
-  borderWidth: 1,
-  borderColor:  'black',
-  value: 200,
-  label: {
-    position: 'start',
-    content: 'Recommended Lower Bound',
-    enabled: true,
-    font: {
-      size: 9,
-      family: 'raleway',
-      weight: 'normal',
-    },
-  },
-};
 
 const ctxcon = document.getElementById('conductanceChart').getContext('2d');
   const myChart4 = new Chart(ctxcon, {
@@ -337,7 +320,7 @@ const ctxcon = document.getElementById('conductanceChart').getContext('2d');
   data: {
     labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
     datasets: [{
-      label: 'Average Specific Conductance (µS/cm at 25°C)',
+      label: 'Average Specific Conductance (µS/cm)',
       data: [829, 782, 893, 982, 860, 940, 920],
       backgroundColor: [
         'rgba(54, 162, 235, 0.8)',
@@ -375,7 +358,6 @@ const ctxcon = document.getElementById('conductanceChart').getContext('2d');
       annotation: {
         annotations: {
           conductanceUpperBound,
-          conductanceLowerBound
         }
       }
     },
@@ -394,13 +376,11 @@ const ctxcon = document.getElementById('conductanceChart').getContext('2d');
     scales: {
           y: {
               beginAtZero: true,
-              suggestedMax: 1100
+              suggestedMax: 3900
           }
       }
   }
   });
 
 
-
-  /* Testing */
-  
+ 

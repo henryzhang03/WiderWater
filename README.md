@@ -1,1 +1,8 @@
-# WiderWater
+<h1 align="center" style="font-family: 'Raleway', sans-serif";" >WiderWater</h1>
+
+<span style="font-family: 'Raleway', sans-serif">
+
+## *Section 1: What it does*
+WiderWater collects data from households in local communities, stores it in a database, and then provides an accurate analysis of micro and macro water health trends. For example, if a particular household's water quality is adversely changing relative to the rest of the neighborhood and town, we can identify a localized source of water contamination (e.g., pipe rusting, calcium deposits, etc.). However, suppose we detect that an entire community's water quality is trending towards poor values. In that case, we can quickly take action and notify the appropriate environmental protection governmental bodies to identify bulk sources of contamination (e.g., fertilizer runoff from industrial farms). We first built schematics for a small, cost-effective device that measures pH, dissolved oxygen, turbidity, and specific conductance. This device can be deployed in a home's central water supply unit, and its sole responsibility is to record data and deposit it into a user-friendly website. The website allows users to create personal accounts to access data specific to their region. The sensors then send data via a C++ program (not yet implemented) to a MySQL database. The data received from each household would then be analyzed to efficiently identify water supply problems (such as pipe deterioration), detect pollution, and diagnose specific issues in the plumbing of individual homes. Since all of these data points are stored in a MySQL server, they can be accessed for long-term trend analysis. As the number of users grows, the program will be able to better analyze the causes of water safety issues and provide local governments with efficient tools for troubleshooting local issues.
+
+</span>

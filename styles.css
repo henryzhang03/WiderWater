@@ -49,6 +49,7 @@ button:hover {
   text-decoration: none;
   font-size: 2rem;
   padding-left: 3.3rem;
+  font-weight: 900;
 }
 
 .navbar__menu {
@@ -229,7 +230,7 @@ video {
   height: 90%;
   z-index: 1;
   width: 100%;
-  padding: 26rem 10rem 0rem 12rem;
+  padding: 29rem 10rem 0rem 12rem;
 }
 
 .main__content {
@@ -265,7 +266,7 @@ video {
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 13rem 0;
+  padding: 10rem 0;
 }
 
 .services h1 {
@@ -380,7 +381,9 @@ video {
 .popup h2 {
   margin-top: 0;
   color: #333;
-  font-family: Tahoma, Arial, sans-serif;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  padding: 0rem 0rem 1rem 0rem;
 }
 
 .popup .close {
@@ -434,7 +437,9 @@ video {
 .popup2 h2 {
   margin-top: 0;
   color: #333;
-  font-family: Tahoma, Arial, sans-serif;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  padding: 0rem 0rem 1rem 0rem;
 }
 .popup2 .close {
   position: absolute;
@@ -485,7 +490,9 @@ video {
 .popup3 h2 {
   margin-top: 0;
   color: #333;
-  font-family: Tahoma, Arial, sans-serif;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  padding: 0rem 0rem 1rem 0rem;
 }
 
 .popup3 .close {
@@ -539,7 +546,9 @@ video {
 .popup4 h2 {
   margin-top: 0;
   color: #333;
-  font-family: Tahoma, Arial, sans-serif;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  padding: 0rem 0rem 1rem 0rem;
 }
 
 .popup4 .close {
@@ -683,19 +692,6 @@ padding-top: 16px;
   margin: auto;
   float: right;
   border-radius: .3rem;
-}
-
-.divider {
-  padding-top: 1rem;
-}
-
-hr {
-  border: 1px solid #578AC1;
-  border-radius: 1px;
-}
-
-.hr__wrapper {
-  padding: .2rem;
 }
 
 .login__container {
@@ -898,5 +894,180 @@ table.center {
 }
 
 
-/* TESTING  */
+/* GAUGE #1  */
+
+#power-gauge g.pointer {
+  fill: #000;
+  stroke: #000;
+}
+
+  #power-gauge .tickline {
+      stroke: "#000";
+      stroke-width: 1px;
+
+  }
+
+  #power-gauge .number-div {
+   
+      text-align: center;
+      
+      
+  
+  }
+
+#power-gauge .label-low {
+display:block;
+float:left;
+}
+
+#power-gauge .label-high {
+display:block;
+float:right;
+}
+
+  #power-gauge .number-span-numerator { 
+    font-size: 36pt;
+    color: '#000';
+  }
+
+#power-gauge .number-span-denominator {
+      font-size: 20pt;
+  }
+
+
+.gauge__wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 0rem 10rem 5rem 10rem; 
+}
+
+.gauge__inner p{
+  padding: 0 6rem 0 0;
+  text-align: center;
+}
+
+/* GAUGE 2 */
+#power-gauge2 g.pointer {
+  fill: #000;
+  stroke: #000;
+}
+
+  #power-gauge2 .tickline {
+      stroke: "#000";
+      stroke-width: 1px;
+
+  }
+
+  #power-gauge2 .number-div {
+   
+      text-align: center;
+      
+      
+  
+  }
+
+#power-gauge2 .label-low {
+display:block;
+float:left;
+}
+
+#power-gauge2 .label-high {
+display:block;
+float:right;
+}
+
+  #power-gauge2 .number-span-numerator { 
+    font-size: 36pt;
+    color: '#000';
+  }
+
+#power-gauge2 .number-span-denominator {
+      font-size: 20pt;
+  }
+
+
+/* GAUGE 3 */
+#power-gauge3 g.pointer {
+  fill: #000;
+  stroke: #000;
+}
+
+  #power-gauge3 .tickline {
+      stroke: "#000";
+      stroke-width: 1px;
+
+  }
+
+  #power-gauge3 .number-div {
+   
+      text-align: center;
+      
+      
+  
+  }
+
+#power-gauge3 .label-low {
+display:block;
+float:left;
+}
+
+#power-gauge3 .label-high {
+display:block;
+float:right;
+}
+
+  #power-gauge3 .number-span-numerator { 
+    font-size: 36pt;
+    color: '#000';
+  }
+
+#power-gauge3 .number-span-denominator {
+      font-size: 20pt;
+  }
+
+
+
+
+  /* GAUGE 4 */
+#power-gauge4 g.pointer {
+  fill: #000;
+  stroke: #000;
+}
+
+  #power-gauge4 .tickline {
+      stroke: "#000";
+      stroke-width: 1px;
+
+  }
+
+  #power-gauge4 .number-div {
+   
+      text-align: center;
+      
+      
+  
+  }
+
+#power-gauge4 .label-low {
+display:block;
+float:left;
+}
+
+#power-gauge4 .label-high {
+display:block;
+float:right;
+}
+
+  #power-gauge4 .number-span-numerator { 
+    font-size: 36pt;
+    color: '#000';
+  }
+
+#power-gauge4 .number-span-denominator {
+      font-size: 20pt;
+  }
+
+
+
 

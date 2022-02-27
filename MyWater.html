@@ -29,10 +29,6 @@
     <div id="signUpForm" class="modal">
       <form class="modal-content" action="/action_page.php">
         <div class="login__container">
-          <h1>Sign Up</h1>
-          <div class = "hr__wrapper">
-            <hr>
-          </div>
           <label for="email"><b>Email</b></label>
           <input type="username" placeholder="Enter Email" name="email" required>
     
@@ -72,7 +68,7 @@
             <a href="contact.html" class="navbar__links" id="services-page">Contact</a>
           </li>
           <li class="navbar__login">
-            <button class = "navbar__btn" onclick="document.getElementById('signUpForm').style.display='block'" >Sign Up</button>
+            <button class = "navbar__btn" onclick="document.getElementById('signUpForm').style.display='block'" >Henry</button>
           </li>
         </ul>
       </div>
@@ -81,15 +77,32 @@
     <!-- Hero Section -->
     <div class="hero2" id="home">
       <div class="hero__container2">
-        <h1 class="hero__heading2"><span>Welcome!</span></h1>
+        <h1 class="hero__heading2"><span>Welcome, Henry!</span></h1>
         <p class="hero__description"></p>
       </div>
     </div>
 
-    <!-- About Section -->
+    <!-- Gauges Section -->
     <div class="myWater__indicators">
-      <h1>Key Performance Indicators</h1>
-      
+      <h1>Current Water Quality Indicators</h1>
+      <div class="gauge__wrapper">
+        <div class = gauge__inner>
+          <div id="power-gauge"></div>
+          <p>pH Level</p>
+        </div>
+        <div class = gauge__inner>
+          <div id="power-gauge2"></div>
+          <p>Dissolved Oxygen (mg/L)</p>
+        </div>
+        <div class = gauge__inner>
+          <div id="power-gauge3"></div>
+          <p>Turbidity (NTU)</p>
+        </div>
+        <div class = gauge__inner>
+          <div id="power-gauge4"></div>
+          <p>Specific Conductance (μS/cm)</p>
+        </div>
+      </div>
     </div> 
 
 <div id="chartdiv"></div>
@@ -155,12 +168,19 @@
       </section>
     </div>
 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/1.3.1/chartjs-plugin-annotation.min.js" integrity="sha512-y7WpspnUHkKaewKb/dwPyBDJhigLAA9eH2rdvXGwZonWs/5NpSxKI6ZG2TWQVo+JY+tfNdgPgjcTGDhG/GMriA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="app.js"></script>
+    <script src="gauge1.js"></script>
+    <script src="gauge2.js"></script>
+    <script src="gauge3.js"></script>
+    <script src="gauge4.js"></script>
     <script src="jquery.min.js"></script>
     <script src="dx.all.js"></script>
     
+
+
   </body>
 </html>
 
