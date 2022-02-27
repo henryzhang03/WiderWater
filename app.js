@@ -186,7 +186,7 @@ const ctxturbidity = document.getElementById('turbidityChart').getContext('2d');
 });
 const annotation1 = {
   type: 'line',
-  scaleID: 'x',
+  scaleID: 'y',
   borderWidth: 3,
   borderColor: 'black',
   value: 0.5,
@@ -198,10 +198,10 @@ const annotation1 = {
 
 const annotation2 = {
   type: 'line',
-  scaleID: 'x',
+  scaleID: 'y',
   borderWidth: 3,
   borderColor: 'black',
-  value: 'Label 5',
+  value: 4,
   label: {
     rotation: 'auto',
     position: 'start',
@@ -210,13 +210,14 @@ const annotation2 = {
     enabled: true
   }
 };
+const ctxcon = document.getElementById('conductanceChart').getContext('2d');
   const myChart4 = new Chart(ctxcon, {
   type: 'bar',
   data: {
     labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
     datasets: [{
-      label: 'Average pH',
-      data: [6.8, 7.2, 8.1, 7.9, 8.5, 7.1, 6.2],
+      label: 'Average Specific Conductance (µS/cm at 25°C)',
+      data: [829, 782, 893, 982, 860, 940, 920],
       backgroundColor: [
         'rgba(54, 162, 235, 0.8)',
         'rgba(54, 162, 235, 0.8)',
@@ -242,7 +243,7 @@ const annotation2 = {
     plugins: {
       title: {
         display: true,
-        text: 'pH Indicator',
+        text: 'Specific Conductance',
         font: {
           size: 40,
           family: 'raleway',
@@ -251,8 +252,7 @@ const annotation2 = {
       },
       annotation: {
         annotations: {
-          annotation1,
-          annotation2
+          conductanceUpperBound
         }
       }
     },

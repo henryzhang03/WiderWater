@@ -110,7 +110,7 @@ button:hover {
   -o-background-size: cover;
   background-size: cover;
   
-  background-image: url("/imgs/welcome.png");
+  background-image: url("imgs/welcome.png");
 }
 
 .hero__container {
